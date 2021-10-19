@@ -14,7 +14,7 @@ const Doctor = () => {
                 <h1 className='font-bold p-10 text-5xl text-center'>Our Doctors</h1>
             </div>
             <div>
-                <h1 className="mx-auto sm:text-2xl text-3xl text-center w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique at mollitia, corporis ullam exercitationem ipsam qui cupiditate aliquam officia earum quae a voluptas? Nobis perspiciatis ipsa architecto porro laborum officiis.</h1>
+                <h1 className="mx-auto sm:text-2xl text-3xl text-center w-2/3">Find a doctor who is the perfect match for your medical needs. Use the tools below to search for a doctor by name, specialty, gender, service line or practice location.</h1>
             </div>
             <div className="grid lg:grid-cols-3 p-36 gap-8 sm:p-20">
                 {

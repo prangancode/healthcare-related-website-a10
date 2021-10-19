@@ -15,7 +15,9 @@ const Blog = () => {
                 <h1 className='font-bold p-10 text-5xl text-center'>Our Blogs</h1>
             </div>
             <div>
-                <h1 className="mx-auto text-3xl text-center w-2/3 sm:w-11/12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique at mollitia, corporis ullam exercitationem ipsam qui cupiditate aliquam officia earum quae a voluptas? Nobis perspiciatis ipsa architecto porro laborum officiis.</h1>
+                <h1 className="mx-auto text-3xl text-center w-2/3 sm:w-11/12">
+
+                    Certain challenges faced by a single parent include poor income in the family, fatigued parent, inability to provide love and attention to the child, workaholic parent, children with low self-esteem and, social isolation, etc. Although these challenges are daunting, one can find many ways to tackle the load that single parenting brings along.</h1>
             </div>
             <div className="grid lg:grid-cols-3 p-36 gap-8 sm:p-20">
                 {

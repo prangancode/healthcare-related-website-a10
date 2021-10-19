@@ -18,13 +18,13 @@ const Home = () => {
     }, [])
     return (
         <div>
-            <div className='bg-gray-100 lg:flex lg:flex-row justify-evenly lg:m-12 lg:p-10 rounded-3xl sm:flex-col-reverse sm:flex'>
+            <div className='bg-gray-100 lg:flex lg:flex-row justify-evenly m-5 p-10 rounded sm:flex-col-reverse sm:flex'>
 
-                <div className='flex-col self-center sm:pt-1.5 sm:w-11/12 lg:w-1/3'>
+                <div className='flex-col self-center sm:pt-1.5 sm:w-11/12 w-1/3'>
                     <h1 className='font-bold text-5xl'>Your Healthy Life is Our First Priority</h1>
-                    <p className='mt-10 text-2xl'>Education connects you with the stories, theories and accomplishments of faraway cultures and generations. It offers you a body of knowledge greater than you can ever gain on your own in one lifetime.</p>
+                    <p className='mt-10 text-2xl'>You might think that making your health your number one priority in life is impossible, what with work, family, friends, religion, and whatever else you have going on. Trust me, now is the time to start putting yourself and your health first. Why, you might ask – because when you are healthy, every other aspect of your life is much more enjoyable for you and those around you.</p>
                     <Link to='/doctor'> <button className="bg-white border border-gray-400 font-semibold hover:bg-gray-400 hover:text-white mt-16  px-4 py-2 rounded shadow text-gray-800 w-2/3 ">
-                        Doctors
+                        Explore Us
                     </button>
                     </Link>
                 </div>
@@ -41,7 +41,7 @@ const Home = () => {
                 <h1 className='font-bold p-10 text-5xl text-center'>Discover Our Services</h1>
             </div>
             <div>
-                <h1 className="mx-auto sm:text-2xl text-3xl text-center w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique at mollitia, corporis ullam exercitationem ipsam qui cupiditate aliquam officia earum quae a voluptas? Nobis perspiciatis ipsa architecto porro laborum officiis.</h1>
+                <h1 className="mx-auto sm:text-2xl text-3xl text-center w-2/3">It has always been our belief that the most effective use of our time as financial professionals is servicing our clients. Our clients are always our first priority, and we believe that focusing on helping them pursue their financial goals is the key to building the foundation for a strong relationship.</h1>
             </div>
 
             <div className="gap-8 grid lg:grid-cols-3 p-36 sm:p-20">
@@ -54,7 +54,7 @@ const Home = () => {
             <div>
                 <h1 className='font-black text-5xl text-center'>Our Expertise</h1>
             </div>
-            <div className='lg:grid lg:grid-cols-3 items-end lg:p-36 sm:grid sm:grid-cols-1 sm:p-5'>
+            <div className='lg:grid lg:grid-cols-3 items-end lg:pb-36 sm:grid sm:grid-cols-1 sm:p-5'>
                 <div className='lg:col-span-2'>
 
                     <div>
@@ -64,25 +64,25 @@ const Home = () => {
                         <div className='border-2 rounded-2xl shadow-lg sm:w-11/12 w-2/3'>
                             <div className='p-11 text-center'>
                                 <h1 className='mb-4 text-3xl'>Child Care</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p className='sm:text-justify'>Child care, otherwise known as day care, is the care and supervision of a child or multiple children at a time, whose ages range from two weeks to eighteen years</p>
                             </div>
                         </div>
                         <div className='border-2 rounded-2xl shadow-lg sm:w-11/12 w-2/3'>
                             <div className='p-11 text-center'>
-                                <h1 className='mb-4 text-3xl'>Child Care</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <h1 className='mb-4 text-3xl'>24 Hour Doctor</h1>
+                                <p className='sm:text-justify'>Healthline is available to call 24 hours per day/7 days a week on 0800 611 116 for free health advice, including interpreter services and NZ Relay Services.</p>
                             </div>
                         </div>
                         <div className='border-2 rounded-2xl shadow-lg sm:w-11/12 w-2/3'>
                             <div className='p-11 text-center'>
-                                <h1 className='mb-4 text-3xl'>Child Care</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <h1 className='mb-4 text-3xl'>More Stuff</h1>
+                                <p className='sm:text-justify'>You can see us for any urgent medical issue that you would otherwise see your GP for, as well as accident related injuries such as sprains, cuts or broken bones.</p>
                             </div>
                         </div>
                         <div className='border-2 rounded-2xl shadow-lg sm:w-11/12 w-2/3'>
                             <div className='p-11 text-center'>
-                                <h1 className='mb-4 text-3xl'>Child Care</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <h1 className='mb-4 text-3xl'>Enough Lab</h1>
+                                <p className='sm:text-justify'>Adequate facilities, equipment, and supplies for laboratory experiences are inequitably distributed.</p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ const Home = () => {
                 <h1 className='font-bold p-10 text-5xl text-center'>Our Doctors</h1>
             </div>
             <div>
-                <h1 className="mx-auto sm:w-11/12 text-3xl text-center w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique at mollitia, corporis ullam exercitationem ipsam qui cupiditate aliquam officia earum quae a voluptas? Nobis perspiciatis ipsa architecto porro laborum officiis.</h1>
+                <h1 className="mx-auto sm:w-11/12 text-3xl text-center w-2/3">Find a doctor who is the perfect match for your medical needs. Use the tools below to search for a doctor by name, specialty, gender, service line or practice location.</h1>
             </div>
             <div className="gap-8 grid lg:grid-cols-3 p-36 sm:p-20">
                 {

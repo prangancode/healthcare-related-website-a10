@@ -7,7 +7,7 @@ const Header = () => {
     const { logOut, user } = useAuth();
     return (
         <div>
-            <nav className=" bg-gray-700 flex items-center justify-between flex-wrap bg-teal-500 p-6">
+            <nav className=" bg-blue-400 flex items-center justify-between flex-wrap bg-teal-500 p-6">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
                     <span className="font-serif lg:flex-grow text-2xl">EVER CARE Hospital</span>
                 </div>
@@ -33,7 +33,7 @@ const Header = () => {
                         <Link to='/about' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:animate-bounce-slow mr-2">
                             About Us
                         </Link>
-                        {user.email && <p className='block hover:animate-bounce-slow hover:text-yellow-400 lg:inline-block lg:mt-0 mr-2 mt-4 text-red-500 text-teal-200'>{user.displayName}</p>}
+                        {user.email && <p className='block hover:animate-bounce-slow hover:text-yellow-400 lg:inline-block lg:mt-0 mr-2 mt-4 text-black text-teal-200'>{user.displayName}</p>}
                         {user.email ?
 
                             <Link to='/login' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-2">

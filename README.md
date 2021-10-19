@@ -1,4 +1,4 @@
-# Welcome to MEDI HUB Website 
+# Welcome to EVER CARE Hospital Website 
 
 Project Live Site Link : https://healthcare-web-98117.web.app/
 
