@@ -18,7 +18,7 @@ const HomeDoctor = (props) => {
 
                 </div>
                 <div>
-                    <button className="bg-white border border-gray-400 font-semibold hover:bg-gray-100 mt-4 px-4 py-2 rounded shadow text-gray-800 w-2/3 ">
+                    <button className="bg-blue-100 border-2 hover:ring-4 m-3 mx-auto p-1 ring-2 ring-blue-400 rounded sm:w-11/12 lg:w-1/3 ">
                         Book Appointment
                     </button>
                 </div>
