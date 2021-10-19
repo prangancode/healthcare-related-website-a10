@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomeService = (props) => {
-    const { service_name, img, description } = props.homeService;
+    const { service_name, img, description, id } = props.homeService;
     return (
         <div className=" ring-4 ring-gray-300 rounded-xl shadow-xl">
             <img className="rounded-t-xl  w-full  object-cover" src={img} alt="" ></img>
@@ -18,9 +19,11 @@ const HomeService = (props) => {
 
                 </div>
                 <div>
-                    <button className="bg-white border border-gray-400 font-semibold hover:bg-gray-100 mt-4 px-4 py-2 rounded shadow text-gray-800 w-2/3 ">
-                        See More
-                    </button>
+                    <Link to={`/serviceDetail/${id}`}>
+                        <button className="bg-white border border-gray-400 font-semibold hover:bg-gray-100 mt-4 px-4 py-2 rounded shadow text-gray-800 w-2/3 ">
+                            See More
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

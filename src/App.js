@@ -8,7 +8,7 @@ import Doctor from './Components/Paths/Doctor/Doctor';
 import Home from './Components/Paths/Home/Home';
 import Login from './Components/Paths/Login/Login';
 import NotFound from './Components/Paths/NotFound/NotFound';
-
+import PrivateRoute from './Components/Paths/PrivateRoute/PrivateRoute';
 import Service from './Components/Paths/Service/Service';
 import ServiceDetail from './Components/Paths/ServiceDetails/ServiceDetail';
 import AuthProvider from './ContextApi/AuthProvider';
@@ -22,9 +22,9 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/service">
+          <PrivateRoute path="/service">
             <Service></Service>
-          </Route>
+          </PrivateRoute>
           <Route path="/doctor">
             <Doctor></Doctor>
           </Route>
@@ -37,12 +37,12 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/serviceDetail/:serviceID">
+          <PrivateRoute path="/serviceDetail/:serviceID">
             <ServiceDetail></ServiceDetail>
-          </Route>
-          <Route path="/blog">
+          </PrivateRoute>
+          <PrivateRoute path="/blog">
             <Blog></Blog>
-          </Route>
+          </PrivateRoute>
           <Route path="*">
             <NotFound></NotFound>
           </Route>
