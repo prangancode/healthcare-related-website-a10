@@ -1,6 +1,8 @@
 # Welcome to EVER CARE Hospital Website 
 
-Project Live Site Link : https://healthcare-web-98117.web.app/
+Project Live Site Link :
+ (1) https://healthcare-web-98117.firebaseapp.com/
+ (2) https://healthcare-web-98117.web.app/
 
 ## Bullet Points :
 
