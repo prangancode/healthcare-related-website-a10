@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
+import Pulse from 'react-reveal/Pulse';
 
 
 const Header = () => {
     const { logOut, user } = useAuth();
     return (
         <div>
-            <nav className=" bg-blue-400 flex items-center justify-between flex-wrap bg-teal-500 p-6">
+            <nav className=" bg-indigo-400 flex items-center justify-between flex-wrap bg-teal-500 p-8">
+
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
-                    <span className="font-serif lg:flex-grow text-2xl">EVER CARE Hospital</span>
+                    <Pulse>
+                        <span className="font-mono font-bold sm:text-2xl  lg:flex-grow lg:text-4xl">EVER CARE Hospital</span>
+                    </Pulse>
                 </div>
                 <div className="block lg:hidden">
                     <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -17,32 +21,33 @@ const Header = () => {
                     </button>
                 </div>
                 <div className="w-full block flex-grow-0 lg:flex lg:items-center lg:w-auto">
+
                     <div className="font-serif lg:flex-grow text-2xl ">
-                        <Link to='/home' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 hover:animate-bounce-slow">
+                        <Link to='/home' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:bg-indigo-800 p-2 rounded-lg mr-4">
                             Home
                         </Link>
-                        <Link to='/doctor' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 hover:animate-bounce-slow">
+                        <Link to='/doctor' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 hover:bg-indigo-800 p-2 rounded-lg">
                             Doctors
                         </Link>
-                        <Link to='/service' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 hover:animate-bounce-slow">
+                        <Link to='/service' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:bg-indigo-800 p-2 rounded-lg mr-4">
                             Services
                         </Link>
-                        <Link to='/blog' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 hover:animate-bounce-slow">
+                        <Link to='/blog' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:bg-indigo-800 p-2 rounded-lg mr-4">
                             Blogs
                         </Link>
-                        <Link to='/about' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white hover:animate-bounce-slow mr-2">
+                        <Link to='/about' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:bg-indigo-800 p-2 rounded-lg mr-4">
                             About Us
                         </Link>
-                        {user.email && <p className='block hover:animate-bounce-slow hover:text-yellow-400 lg:inline-block lg:mt-0 mr-2 mt-4 text-black text-teal-200'>{user.displayName}</p>}
+                        {user.email && <p className='block  hover:text-white lg:inline-block lg:mt-0 mr-2 mt-4 text-black text-teal-200'>{user.displayName}</p>}
                         {user.email ?
 
                             <Link to='/login' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-2">
-                                <button onClick={logOut} className='border-2 focus:ring-2 focus:ring-gray-400 hover:bg-blue-400 hover:text-black p-1 rounded'> Log Out</button> </Link>
+                                <button onClick={logOut} className='bg-white text-indigo-800 hover:bg-blue-800 hover:text-white p-1 text-xl rounded'> Log Out</button> </Link>
 
 
                             :
                             <Link to='/login' className=" text-white block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-2">
-                                <button className='border-2 focus:ring-2 focus:ring-gray-400 hover:bg-blue-400 hover:text-black p-1 rounded'>Login</button> </Link>
+                                <button className=' bg-white text-indigo-800 hover:bg-blue-800 hover:text-white px-1 rounded'>Login</button> </Link>
 
                         }
 

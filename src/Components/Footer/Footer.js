@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div style={{
             backgroundImage: `url("https://disin-react.hibootstrap.com/images/footer-bg.png")`
-        }} className="px-4 divide-y bg-blue-100 dark:text-coolGray-100">
+        }} className="px-4 divide-y bg-indigo-200 dark:text-coolGray-100">
             <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                 <div className="lg:w-1/3">
                     <a href="https:www.google.com" className="flex justify-center space-x-3 lg:justify-start">
