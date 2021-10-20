@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import HomeDoctor from './HomeDoctor';
 import HomeService from './HomeService';
+import Slide from 'react-reveal/Slide';
+import Bounce from 'react-reveal/Bounce';
+
 
 const Home = () => {
     const [homeServices, setHomeServices] = useState([]);
@@ -21,8 +24,12 @@ const Home = () => {
             <div className='bg-indigo-100 lg:flex lg:flex-row justify-evenly sm:m-2 lg:m-6 p-10 rounded-3xl sm:flex-col-reverse sm:flex'>
 
                 <div className='flex-col self-center sm:pt-1.5 sm:w-11/12 lg:w-3/5'>
+
                     <h1 className='font-bold text-indigo-800 text-5xl'>Your Healthy Life is Our First Priority</h1>
-                    <p className='mt-10 font-mono text-xl'>You might think that making your health your number one priority in life is impossible, what with work, family, friends, religion, and whatever else you have going on. Trust me, now is the time to start putting yourself and your health first. Why, you might ask – because when you are healthy, every other aspect of your life is much more enjoyable for you and those around you.</p>
+
+                    <Bounce bottom cascade>
+                        <p className='mt-10 font-mono text-xl'>You might think that making your health your number one priority in life is impossible, what with work, family, friends, religion, and whatever else you have going on. Trust me, now is the time to start putting yourself and your health first. Why, you might ask – because when you are healthy, every other aspect of your life is much more enjoyable for you and those around you.</p>
+                    </Bounce>
                     <Link to='/doctor'> <button className="bg-white border border-indigo-400 font-semibold hover:bg-indigo-400 hover:text-white mt-16  px-4 py-2 rounded shadow text-gray-800 w-2/3 ">
                         Explore us
                     </button>
@@ -31,7 +38,9 @@ const Home = () => {
 
 
                 <div>
-                    <img src='https://disin-react.hibootstrap.com/images/home-three/home-three-banner1.png' alt="study" />
+                    <Slide bottom cascade>
+                        <img src='https://disin-react.hibootstrap.com/images/home-three/home-three-banner1.png' alt="study" />
+                    </Slide>
                 </div>
             </div>
 
